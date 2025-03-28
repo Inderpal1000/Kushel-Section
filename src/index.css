@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Verdana, 'Geneva', "sans-serif";
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* ✅ Prevents unwanted side scrolling */
+  /* background: #001f3f; */
+  color: white;
+}
+
+/* Section Styles */
+.horizontal-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Progress Bar */
+.progress-container {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.progress-line {
+  height: 100%;
+  width: 0%;
+  background: #00bfff;
+  transition: width 0.1s ease-out;
+}
+
+/* Scrollable Content */
+.scroll-container {
+  display: flex;
+  width: fit-content;
+  gap: 50px;
+  padding-left: 0; /* ✅ Ensures first panel is fully visible */
+}
+
+.panel {
+  min-width: 100vw; /* ✅ Ensures each panel takes up full screen width */
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 100px;
+  background: linear-gradient(135deg, #004080, #800080);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,73 @@
+
+.banner-container {
+    padding: 110px 40px;
+    width: 100%;
+    max-width: 1400px;
+    height: 100vh;
+    background: url(/banner-bg.png);
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+   
+  .inner-banner-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  .banner-left {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    transition: all 0.4s ease-in;
+  }
+  
+  .click-icons {
+    font-size: 13px;
+      margin: 8px 0px;
+  }
+  
+  .banner-left-heading {
+    font-size: 3rem;
+      line-height: 3.5rem;
+  }
+  
+  .banner-left-para {
+    font-size: 1.2rem;
+      font-weight: 600;
+      margin: 30px 0px;
+  }
+  
+  .banner-left-btn {
+    padding: 20px 15px;
+      background: white;
+      border: none;
+      outline: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 3px;
+  }
+  
+  .banner-right {
+    width: 35%;
+    /* display: none; */
+  }
+  
+  .slick-arrow {
+    display: none !important;
+  }
+  
+  .slick-dots {
+    display: none !important;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }

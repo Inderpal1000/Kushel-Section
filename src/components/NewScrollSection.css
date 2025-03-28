@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.scroll-wrapper {
+    overflow-x: hidden;
+    position: relative;
+    padding: 20px;
+    /* height: 100vh; */
+    background: linear-gradient(280deg, #c5e1f8, #c8d5f9 62.02%, #f9f9f4);
+}
+
+.pin-spacer {
+    padding: 20px 60px !important;
+}
+
+.scroll-section-heading, .scroll-section-para {
+    text-align: center;
+}
+
+.scroll-section-heading {
+    font-size: 3.2rem;
+    font-weight: 600;
+    /* color: #083792; */
+}
+
+.scroll-section-para {
+    font-size: 1.3rem;
+    margin: 10px 0px 50px 0px;
+    /* color: #083792; */
+}
+
+.scroll-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 200vw;
+    position: relative;
+}
+
+.scrolled-section {
+    width: 40vw;
+}
+
+.scroll-card-img {
+    margin-bottom: 20px;
+}
+
+.scroll-card-heading {
+    font-size: 1.6rem;
+    /* color: #083792; */
+}
+
+.scroll-card-para {
+    font-size: 1.2rem;
+    margin: 20px 0px;
+    /* color: #083792; */
+}
+
+.scroll-card-li-heading {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    /* color: #083792; */
+}
+
+.scroll-card-ul {
+    list-style: none;
+    /* color: #083792; */
+}
+
+.scroll-card-ul > li {
+    font-size: 1.1rem;
+    margin: 5px 0px;
+}
+
+.card-numbering {
+    font-size: 2rem;
+}
+
+.scrolled-section > svg {
+        width: 250%;
+        height: auto;
+        margin-bottom: 20px;
+}
