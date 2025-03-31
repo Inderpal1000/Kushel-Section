@@ -28,13 +28,14 @@
     margin-top: 15px;
 }
 
-input[type=checkbox] {
+
+#switch {
     height: 0;
     width: 0;
     visibility: hidden;
 }
 
-label {
+#switchLabel {
     cursor: pointer;
     text-indent: -9999px;
     width: 150px;
@@ -45,7 +46,7 @@ label {
     position: relative;
 }
 
-label:after {
+#switchLabel:after {
     content: '';
     position: absolute;
     top: 5px;
@@ -57,11 +58,11 @@ label:after {
     transition: 0.3s;
 }
 
-input:checked+label {
+#switch:checked+#switchLabel {
     background: #12b76a;
 }
 
-input:checked+label:after {
+#switch:checked+#switchLabel:after {
     left: calc(100% - 5px);
     transform: translateX(-100%);
 }
@@ -70,7 +71,6 @@ input:checked+label:after {
 .progress-toggle-btn-div {
     display: flex;
     align-items: center;
-    gap: 30px;
     margin-top: 35px;
 }
 
@@ -89,17 +89,10 @@ input:checked+label:after {
     transition: all .5s ease-out;
 }
 
-.button:hover {
+/* .button:hover {
     background-position: left bottom;
-}
-
-/* .phases {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    overflow-x: scroll;
-    margin-top: 50px;
 } */
+
 
 #phase1{
     width: 100px;
@@ -158,13 +151,13 @@ input:checked+label:after {
     opacity: 0;
 }
 
-.button:hover {
+/* .button:hover {
     background-position: left bottom;
-}
+} */
 
 #phase1 { animation-delay: 0.2s; opacity: 1; }
 #phase2 { animation-delay: 1.3s; opacity: 1; }
-#phase3 { animation-delay: 2.2s; opacity: 1; }
+#phase3 { animation-delay: 2.4s; opacity: 1; }
 #phase4 { animation-delay: 3s; opacity: 1; }
 #phase5 { animation-delay: 4s; opacity: 1; }
 #phase6 { animation-delay: 5.2s; opacity: 1; }
@@ -181,14 +174,278 @@ input:checked+label:after {
     overflow-x: scroll;
     margin-top: 50px;
     position: relative;
-    height: 300px;
+    height: 400px;
+    padding: 0px 5px;
+}
+
+
+#phase1::before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    background-color: #c4e5d1;
+    height: 115px;
+    position: absolute;
+    left: 0px;
+    bottom: 75px;
 }
 
 #phase1Name {
     position: absolute;
     bottom: 50px;
-    left: 0px;
+    left: 5px;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    animation: textAnimation 0.5s ease-in-out forwards;
 }
 
+#phase2::before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    background-color: #c4e5d1;
+    height: 162px;
+    position: absolute;
+    left: 109px;
+    bottom: 31px;
+}
+
+#phase2Name{
+    position: absolute;
+    bottom: 20px;
+    left: 116px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: textAnimation 0.5s ease-in-out forwards;
+}
+
+#phase3Name {
+    position: absolute;
+    top: 0px;
+    left: 233px;
+    opacity: 0;
+    animation: textAnimation 0.5s ease-in-out forwards;
+}
+
+#phase3::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    background-color: #c4e5d1;
+    height: 353px;
+    position: absolute;
+    left: 280px;
+    top: 8px;
+}
+
+#phase4Name {
+    position: absolute;
+    bottom: 11px;
+    left: 288px;
+    opacity: 0;
+    animation: textAnimation 0.5s ease-in-out forwards;
+}
+
+#phase5Name {
+    position: absolute;
+    top: 58px;
+    left: 345px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: textAnimation 0.5s ease-in-out forwards;
+}
+
+#phase5::before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    background-color: #c4e5d1;
+    height: 132px;
+    position: absolute;
+    left: 339px;
+    top: 61px;
+}
+
+#phase5::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    background-color: #c4e5d1;
+    height: 188px;
+    position: absolute;
+    left: 458px;
+    top: 6px;
+}
+
+#phase7::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    background-color: #c4e5d1;
+    height: 167px;
+    position: absolute;
+    right: 609px;
+    top: 29px;
+}
+
+
+#phase6Name {
+    position: absolute;
+    top: 0px;
+    left: 464px;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    animation: textAnimation 0.5s ease-in-out forwards;
+}
+
+#phase7Name {
+    position: absolute;
+    top: 31px;
+    right: 551px;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    animation: textAnimation 0.5s ease-in-out forwards;
+}
+
+#phase8Name {
+    position: absolute;
+    top: 0px;
+    right: 337px;
+    opacity: 0;
+    animation: textAnimation 0.5s ease-in-out forwards;
+}
+
+#phase8::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    background-color: #c4e5d1;
+    height: 366px;
+    position: absolute;
+    right: 330px;
+    top: 7px;
+}
+
+#phase9Name {
+    position: absolute;
+    bottom: 8px;
+    right: 148px;
+    opacity: 0;
+    animation: textAnimation 0.5s ease-in-out forwards;
+}
+
+#phase10Name {
+    position: absolute;
+    top: 53px;
+    right: 177px;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    animation: textAnimation 0.5s ease-in-out forwards;
+}
+
+#phase10::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    background-color: #c4e5d1;
+    height: 125px;
+    position: absolute;
+    right: 270px;
+    top: 65px;
+}
+
+#phase11Name {
+    position: absolute;
+    top: 0px;
+    right: -40px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    animation: textAnimation 0.5s ease-in-out forwards;
+}
+
+#phase11::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    background-color: #c4e5d1;
+    height: 181px;
+    position: absolute;
+    right: 60px;
+    top: 9px;
+}
+
+.phases {
+    font-size: 14px;
+}
+
+@keyframes textAnimation {
+    0% {
+       opacity: 0;
+    }
+    100% {
+       opacity: 1;
+    }
+}
+
+#phase1Name { animation-delay: 0.2s;}
+#phase2Name { animation-delay: 1.3s;}
+#phase3Name { animation-delay: 3s}
+#phase4Name {animation-delay: 3s;}
+#phase5Name {animation-delay: 4s;}
+#phase6Name { animation-delay: 5.2s;}
+#phase7Name { animation-delay: 6.3s;}
+#phase8Name { animation-delay: 8.2s;}
+#phase9Name {animation-delay: 8.2s;}
+#phase10Name { animation-delay: 9.2s; }
+#phase11Name { animation-delay: 10.4s; }
+
+.textOpacity {
+    color: #c0c0c0;
+}
+
+.agile7phase {
+    right: 476px !important; 
+}
+
+.agile9phase {
+    right: 268px !important;
+}
+
+.agile3phase {
+    left: 181px !important;
+}
+
+.agile11phase {
+    right: -28px !important;
+}
+
+.first-copmpany {
+    margin-right: 30px;
+}
+.second-copmpany {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .progress-inner-container {
+        align-items: baseline;
+    }
+
+    .progress-toggle-btn-div {
+        flex-direction: column;
+        gap: 6px;
+        align-items: baseline;
+    }
+
+    .second-copmpany {
+        margin-top: 10px;
+    }
+}
