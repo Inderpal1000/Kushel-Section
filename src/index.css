@@ -8,8 +8,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  overflow-x: hidden; /* ✅ Prevents unwanted side scrolling */
-  /* background: #001f3f; */
+  overflow: hidden;
   color: white;
 }
 
