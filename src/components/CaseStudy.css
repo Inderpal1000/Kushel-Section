@@ -1,0 +1,51 @@
+.case-study-container {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 20px 60px;
+}
+
+.case-card {
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    position: relative;
+}
+
+.case-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+}
+
+.small-icons-div {
+    position: absolute;
+    bottom: 130px;
+    left: 35%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.case-btnText {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.small-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    border-radius: 50px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}

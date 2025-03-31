@@ -4,6 +4,7 @@ import ScrollSection from './components/ScrollSection';
 import NewScrollSection from './components/NewScrollSection';
 import Progress from './components/Progress';
 import Animate from './components/Animate';
+import CaseStudy from './components/CaseStudy';
 
 const App = () => {
   return (
@@ -12,8 +13,9 @@ const App = () => {
       {/* <NewBanner/> */}
       {/* <ScrollSection/> */}
       {/* <NewScrollSection/> */}
-      <Progress/>
+      {/* <Progress/> */}
       {/* <Animate/> */}
+      <CaseStudy/>
     </div>
   )
 }
