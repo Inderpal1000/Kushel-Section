@@ -13,9 +13,9 @@ const App = () => {
       {/* <NewBanner/> */}
       {/* <ScrollSection/> */}
       {/* <NewScrollSection/> */}
-      {/* <Progress/> */}
+      <Progress/>
       {/* <Animate/> */}
-      <CaseStudy/>
+      {/* <CaseStudy/> */}
     </div>
   )
 }

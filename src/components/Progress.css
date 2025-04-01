@@ -108,10 +108,10 @@
     width: 50px;
 }
 #phase5{
-    width: 110px;
+    width: 109px;
 }
 #phase6{
-    width: 260px;
+    width: 339px;
 }
 #phase7{
     width: 210px;
@@ -176,6 +176,8 @@
     position: relative;
     height: 400px;
     padding: 0px 5px;
+    width: 1430px;
+    /* background:skyblue; */
 }
 
 
