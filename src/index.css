@@ -8,22 +8,29 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  overflow: hidden;
   color: white;
 }
 
+body {
+  overflow-x: hidden; /* Prevent body from scrolling horizontally */
+}
+
+html, body {
+  width: 100%;
+}
+
 /* Section Styles */
-.horizontal-section {
+/* .horizontal-section {
   position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-}
+} */
 
 /* Progress Bar */
-.progress-container {
+/* .progress-container {
   position: absolute;
   bottom: 20px;
   left: 0;
@@ -37,18 +44,18 @@ body {
   width: 0%;
   background: #00bfff;
   transition: width 0.1s ease-out;
-}
+} */
 
 /* Scrollable Content */
-.scroll-container {
+/* .scroll-container {
   display: flex;
   width: fit-content;
   gap: 50px;
-  padding-left: 0; /* ✅ Ensures first panel is fully visible */
-}
+  padding-left: 0; 
+} */
 
-.panel {
-  min-width: 100vw; /* ✅ Ensures each panel takes up full screen width */
+/* .panel {
+  min-width: 100vw;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
@@ -56,4 +63,4 @@ body {
   background: linear-gradient(135deg, #004080, #800080);
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+} */

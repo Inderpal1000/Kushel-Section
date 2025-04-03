@@ -33,6 +33,7 @@ const Progress = () => {
                     <h1 className={`progress-company-name second-copmpany ${!isSwitch ? 'textOpacity' : ''}`}>AGILE</h1>
                 </div>
 
+                <div className="phases-wrapper">
                 <div key={isSwitch ? "agile" : "hybrid"} ref={phasesRef} className="phases">
                 {
                     !isSwitch ? (
@@ -149,7 +150,7 @@ const Progress = () => {
                             </div>
 
                             <div id='phase8' className="button"></div>
-                            <div id='phase8Name'>
+                            <div id='phase8Name' className='agile8phase'>
                                 <span className=''>Sprint Completed</span>
                             </div>
 
@@ -161,7 +162,7 @@ const Progress = () => {
 
 
                             <div id='phase10' className="button"></div>
-                            <div id='phase10Name'>
+                            <div id='phase10Name' className='agile10phase'>
                                 <span className=''>06</span>
                                 <span className=''>Production</span>
                             </div>
@@ -174,6 +175,7 @@ const Progress = () => {
                     )
                 }
                 </div> 
+                </div>
 
             </div>
         </div>

@@ -5,6 +5,7 @@ import NewScrollSection from './components/NewScrollSection';
 import Progress from './components/Progress';
 import Animate from './components/Animate';
 import CaseStudy from './components/CaseStudy';
+import Shopify from './components/Shopify';
 
 const App = () => {
   return (
@@ -13,9 +14,10 @@ const App = () => {
       {/* <NewBanner/> */}
       {/* <ScrollSection/> */}
       {/* <NewScrollSection/> */}
-      <Progress/>
       {/* <Animate/> */}
       {/* <CaseStudy/> */}
+      {/* <Progress/> */}
+      <Shopify/>
     </div>
   )
 }

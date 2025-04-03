@@ -78,25 +78,8 @@
     font-size: 4.6rem;
 }
 
-.button {
-    border: 1px solid  #12b76a;
-    border-radius: 50px;
-    height: 25px;
-    display: block;
-    background: linear-gradient(to right,  #12b76a 50%, white 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all .5s ease-out;
-}
-
-/* .button:hover {
-    background-position: left bottom;
-} */
-
-
 #phase1{
     width: 100px;
-    /* position: relative; */
 }
 #phase2{
     width: 100px;;
@@ -151,10 +134,6 @@
     opacity: 0;
 }
 
-/* .button:hover {
-    background-position: left bottom;
-} */
-
 #phase1 { animation-delay: 0.2s; opacity: 1; }
 #phase2 { animation-delay: 1.3s; opacity: 1; }
 #phase3 { animation-delay: 2.4s; opacity: 1; }
@@ -167,17 +146,21 @@
 #phase10 { animation-delay: 9.2s; opacity: 1; }
 #phase11 { animation-delay: 10.4s; opacity: 1; }
 
+.phases-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
 .phases {
     display: flex;
     align-items: center;
     gap: 10px;
-    overflow: scroll;
     margin-top: 50px;
     position: relative;
     height: 400px;
     padding: 0px 5px;
-    width: 1430px;
-    /* background:skyblue; */
+    width: 1250px;
+    white-space: nowrap;  
 }
 
 
@@ -209,14 +192,14 @@
     background-color: #c4e5d1;
     height: 162px;
     position: absolute;
-    left: 109px;
+    left: 95px;
     bottom: 31px;
 }
 
 #phase2Name{
     position: absolute;
     bottom: 20px;
-    left: 116px;
+    left: 103px;
     display: flex;
     flex-direction: column;
     opacity: 0;
@@ -226,7 +209,7 @@
 #phase3Name {
     position: absolute;
     top: 0px;
-    left: 233px;
+    left: 199px;
     opacity: 0;
     animation: textAnimation 0.5s ease-in-out forwards;
 }
@@ -238,14 +221,14 @@
     background-color: #c4e5d1;
     height: 353px;
     position: absolute;
-    left: 280px;
+    left: 248px;
     top: 8px;
 }
 
 #phase4Name {
     position: absolute;
-    bottom: 11px;
-    left: 288px;
+    bottom: 18px;
+    left: 254px;
     opacity: 0;
     animation: textAnimation 0.5s ease-in-out forwards;
 }
@@ -253,7 +236,7 @@
 #phase5Name {
     position: absolute;
     top: 58px;
-    left: 345px;
+    left: 307px;
     display: flex;
     flex-direction: column;
     opacity: 0;
@@ -267,7 +250,7 @@
     background-color: #c4e5d1;
     height: 132px;
     position: absolute;
-    left: 339px;
+    left: 301px;
     top: 61px;
 }
 
@@ -278,7 +261,7 @@
     background-color: #c4e5d1;
     height: 188px;
     position: absolute;
-    left: 458px;
+    left: 405px;
     top: 6px;
 }
 
@@ -289,7 +272,7 @@
     background-color: #c4e5d1;
     height: 167px;
     position: absolute;
-    right: 609px;
+    right: 539px;
     top: 29px;
 }
 
@@ -297,7 +280,7 @@
 #phase6Name {
     position: absolute;
     top: 0px;
-    left: 464px;
+    left: 410px;
     display: flex;
     opacity: 0;
     flex-direction: column;
@@ -307,7 +290,7 @@
 #phase7Name {
     position: absolute;
     top: 31px;
-    right: 551px;
+    right: 474px;
     display: flex;
     opacity: 0;
     flex-direction: column;
@@ -317,7 +300,7 @@
 #phase8Name {
     position: absolute;
     top: 0px;
-    right: 337px;
+    right: 294px;
     opacity: 0;
     animation: textAnimation 0.5s ease-in-out forwards;
 }
@@ -329,14 +312,14 @@
     background-color: #c4e5d1;
     height: 366px;
     position: absolute;
-    right: 330px;
+    right: 292px;
     top: 7px;
 }
 
 #phase9Name {
     position: absolute;
     bottom: 8px;
-    right: 148px;
+    right: 108px;
     opacity: 0;
     animation: textAnimation 0.5s ease-in-out forwards;
 }
@@ -344,7 +327,7 @@
 #phase10Name {
     position: absolute;
     top: 53px;
-    right: 177px;
+    right: 143px;
     display: flex;
     opacity: 0;
     flex-direction: column;
@@ -358,14 +341,14 @@
     background-color: #c4e5d1;
     height: 125px;
     position: absolute;
-    right: 270px;
+    right: 238px;
     top: 65px;
 }
 
 #phase11Name {
     position: absolute;
     top: 0px;
-    right: -40px;
+    right: -45px;
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -379,7 +362,7 @@
     background-color: #c4e5d1;
     height: 181px;
     position: absolute;
-    right: 60px;
+    right: 53px;
     top: 9px;
 }
 
@@ -413,15 +396,23 @@
 }
 
 .agile7phase {
-    right: 476px !important; 
+    right: 398px !important;
+}
+
+.agile8phase {
+    right: 159px !important;
 }
 
 .agile9phase {
-    right: 268px !important;
+    right: 293px !important;
 }
 
 .agile3phase {
-    left: 181px !important;
+    left: 149px !important;
+}
+
+.agile10phase {
+    right: 152px !important;
 }
 
 .agile11phase {
@@ -449,5 +440,22 @@
 
     .second-copmpany {
         margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .progress-company-name {
+        font-size: 2.9rem;
+    }
+
+    #switchLabel {
+        width: 120px;
+        height: 60px;
+    }
+
+    #switchLabel:after {
+        width: 50px;
+        height: 50px;
     }
 }
